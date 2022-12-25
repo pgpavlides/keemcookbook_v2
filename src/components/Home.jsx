@@ -12,7 +12,7 @@ export default function Home() {
         <a href="/recipes">
           <img
             className="animate-zoomin2 mx-auto h-13 pt-5 xl:h-13 xl:pt-20"
-            src="./src/assets/Book_Front.png"
+            src="/src/assets/Book_Front.png"
             alt=""
           />
         </a>
