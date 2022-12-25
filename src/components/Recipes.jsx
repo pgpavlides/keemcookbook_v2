@@ -7,8 +7,9 @@ export default function Recipes() {
       <div className="grid grid-cols-2 gap-2 xl:grid-cols-6">
         <Card
           foodname="ΧΟΙΡΙΝΟ ΜΕ ΠΑΤΑΤΕΣ ΦΟΥΡΝΟΥ"
-          linkref="/recipes/foodrecipe"
+          linkref="/recipespage"
           img="https://www.giorgostsoulis.com/media/k2/items/cache/68b62085e41e8f225811766f8d5eb2bb_L.jpg"
+          
         />
         <Card
           foodname="ΚΡΕΑΣ ΚΟΚΚΙΝΙΣΤΟ"

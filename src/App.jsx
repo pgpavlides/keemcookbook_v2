@@ -2,11 +2,12 @@ import { useState } from "react";
 import "./App.css";
 
 import { Link, Route, Routes } from "react-router-dom";
-import Home from "../src/components/Home";
-import Recipes from "../src/components/Recipes";
-import Navbar from "../src/components/Navbar";
+import Home from "./components/Home";
+import Recipes from "./components/Recipes";
+import RecipePage from "./components/RecipePage";
+import Navbar from "./components/Navbar";
 
-import FoodRecipe from "../src/recipes/FoodRecipe";
+import FoodRecipe from "./components/FoodRecipe";
 
 
 function App() {
@@ -17,7 +18,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/recipes" element={<Recipes />} />
-        <Route path="/recipes/foodrecipe" element={<FoodRecipe/>} />
+        <Route path="/recipespage" element={<RecipePage/>} />
       </Routes>
     </>
   );
