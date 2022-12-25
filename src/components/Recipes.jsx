@@ -13,7 +13,7 @@ export default function Recipes() {
         />
         <Card
           foodname="ΚΡΕΑΣ ΚΟΚΚΙΝΙΣΤΟ"
-          linkref="/recipes/foodrecipe"
+          linkref="/recipespage2"
           img="https://paxxi.gr/wp-content/uploads/2020/01/moshari-kokkinisto.jpg"
         />
         <Card

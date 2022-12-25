@@ -7,7 +7,11 @@ function Scale (event) {
     event.target.classList.add('scale-100');
 }
 
+
+
 const Card = (props) => {
+
+
 
     
   return (
