@@ -8,7 +8,7 @@ export default function Navbar({ fixed }) {
       <nav className="relative flex flex-wrap items-center justify-between px-2 py-3 bg-zinc-500 mb-3">
         <div className="container px-4 mx-auto flex flex-wrap items-center justify-between">
           <div className="w-full relative flex justify-between lg:w-auto lg:static lg:block lg:justify-start">
-          <img className="w-10 inline-block pr-1 xl:w-8" src="/src/assets/KEEM_LOGO.png" alt="" />
+          <img className="w-10 inline-block pr-1 xl:w-8" src="assets/KEEM_LOGO.png" alt="" />
             <a
               className="text-sm font-bold leading-relaxed inline-block mr-4 py-2 whitespace-nowrap uppercase text-white"
               href="/"
