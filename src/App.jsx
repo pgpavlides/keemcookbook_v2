@@ -1,13 +1,12 @@
 import { useState } from "react";
-import reactLogo from "./assets/react.svg";
 import "./App.css";
 
 import { Link, Route, Routes } from "react-router-dom";
-import Home from "./components/Home";
-import Recipes from "./components/Recipes";
-import Navbar from "./components/Navbar";
+import Home from "../public/components/Home";
+import Recipes from "../public/components/Recipes";
+import Navbar from "../public/components/Navbar";
 
-import FoodRecipe from "./recipes/FoodRecipe";
+import FoodRecipe from "../public/recipes/FoodRecipe";
 
 
 function App() {
