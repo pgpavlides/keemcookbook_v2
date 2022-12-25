@@ -2,11 +2,11 @@ import { useState } from "react";
 import "./App.css";
 
 import { Link, Route, Routes } from "react-router-dom";
-import Home from "../public/components/Home";
-import Recipes from "../public/components/Recipes";
-import Navbar from "../public/components/Navbar";
+import Home from "../src/components/Home";
+import Recipes from "../src/components/Recipes";
+import Navbar from "../src/components/Navbar";
 
-import FoodRecipe from "../public/recipes/FoodRecipe";
+import FoodRecipe from "../src/recipes/FoodRecipe";
 
 
 function App() {
