@@ -1,5 +1,5 @@
 import React from "react";
-import { Link, Route, Routes } from "react-router-dom";
+import { Link, Route, Routes, useNavigate } from "react-router-dom";
 import "./Card.css"
 
 function Scale (event) {
@@ -9,10 +9,8 @@ function Scale (event) {
 
 
 
+
 const Card = (props) => {
-
-
-
     
   return (
       <div 

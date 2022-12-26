@@ -1,14 +1,16 @@
 import React from "react";
 import FoodRecipe from "./FoodRecipe";
 import { useState, useEffect } from "react";
+import { useLocation } from "react-router-dom";
 
 
 const RecipePage = (props) => {
 
  
-  const [inputValue, setInputValue] = useState(100);
+  const [inputValue, setInputValue] = useState(100); 
 
   const data = [  
+
     {
       key:"1",
       in:23,
@@ -69,9 +71,10 @@ const RecipePage = (props) => {
       name:"EXTRA: Ντομάτα",
       end:"" 
     },
+    
   ]
 
-const name = "ΧΟΙΡΙΝΟ ΜΕ ΠΑΤΑΤΕΣ ΦΟΥΡΝΟΥ"
+const foodname = "ΧΟΙΡΙΝΟ ΜΕ ΠΑΤΑΤΕΣ ΦΟΥΡΝΟΥ"
 const img = "https://www.giorgostsoulis.com/media/k2/items/cache/68b62085e41e8f225811766f8d5eb2bb_L.jpg"
 const description = "Κόβετε το χοιρινό σε μερίδες Το πλένετε και το στραγγίζετε. Καθαρίζετε τις πατάτες τις πλένετε και τις κόβετε μακρόστενες κυδωνάτες. Βάζετε σε λαμαρίνες το χοιρινό και τις πατάτες, τους ρίχνετε το λάδι, αλάτι, πιπέρι, ρίγανη, χυμό λεμόνι και με καθαρά χέρια τις ανακατεύετε. Από μια γωνία της λαμαρίνας ρίχνετε λίγο νερό, 1/4 στο ύψος της λαμαρίνας και βάζετε τις λαμαρίνες στο φούρνο να ψυθούν σε θερμοκρασία 200 βαθμούς. Το κρέας το γυρίζουμε και από τις 2 πλευρές για να πάρει χρώμα και να ψηθεί"
 const extrainfo = "Το χοιρινό ψητό με πατάτες φούρνου πρέπει, οταν ψηθεί, να είναι με πολύ λίγα υργά. Μπορούμε να ψήσουμε χωριστά το κρέας απο τις πατάτες και τα υγρά από το ψημένο κρέας να τα χρησημοποιήσουμε στις πατάτες και συμπληρώνουμε εάν χρειάζεται λίγο νερό. Εάν δεν έχουμε υγρά απο το ψημένο κρέας, χρησιμοποιούμε στις πατάτες κύβους ζωμού από χοιρινό"
@@ -80,10 +83,9 @@ const extrainfo = "Το χοιρινό ψητό με πατάτες φούρνο
   return (
     <div>
       <FoodRecipe
-
         setInputValue={setInputValue}  
         inputValue={inputValue}
-        name={name}
+        name={foodname}
         img={img}
         data={data}
         description={description}
