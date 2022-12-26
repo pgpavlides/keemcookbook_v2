@@ -10,7 +10,7 @@ import Questions from "./components/Questions";
 import FoodRecipe from "./components/FoodRecipe";
 
 import RecipePage from "./components/RecipePage";
-import RecipePage2 from "./components/RecipePage2";
+import RecipePage2 from "./components/RecipePage2"; 
 
 
 

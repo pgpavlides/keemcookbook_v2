@@ -1,24 +1,18 @@
 import React from "react";
 import FoodRecipe from "./FoodRecipe";
+import { useState, useEffect } from "react";
 
 
-console.log();
+const RecipePage = (data) => {
 
-const RecipePage = () => {
 
-  
-
-  // function makekilo(e) {
-  //   return Math.round(((e / 100) * 100) * 10) / 10
-  // }
-  
-  
-    
 
   
+ 
   return (
     <div>
       <FoodRecipe
+        
         
         name="ΧΟΙΡΙΝΟ ΜΕ ΠΑΤΑΤΕΣ ΦΟΥΡΝΟΥ"
         img="https://www.giorgostsoulis.com/media/k2/items/cache/68b62085e41e8f225811766f8d5eb2bb_L.jpg"

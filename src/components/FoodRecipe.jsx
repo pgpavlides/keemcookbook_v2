@@ -1,24 +1,21 @@
 import React from "react";
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 
-
+export function test() {
+   console.log(handleChange); 
+}
 
 const FoodRecipe = (props) => {
-  const [input, setInput] = useState("");
+  const [inputValue, setInputValue] = useState(100);
+ 
 
-  const inputval = input
+  // function makekilo(event) {
+  //   Math.round(((event / 100) * input) * 10) / 10 
+  // }
 
-  useEffect((value) => {
-    
-1  });
-
-  function makekilo(event) {
-    Math.round(((event / 100) * input) * 10) / 10
-  }
-
-  const handleChange = (event) => {
-    // setInput(e.target.value); //
-  }
+  
+    const handleChange = event => setInputValue(event.target.value);
+ 
 
   return (
     <>
@@ -32,17 +29,20 @@ const FoodRecipe = (props) => {
         </a>
 
         <input
-          value={input}
-          onInput={(e) => setInput(e.target.value)}         
-          // onChange={handleChange}         
-          className="animate-zoomin col-start-4 col-end-6 text-center block w-full p-4
+          // ref={inputRef}
+          value={inputValue}
+          onChange={handleChange}
+          // onInput={(e) => setInput(e.target.value)}         
+          // onInput={(e) => setInput(e.target.value)}         
+          // onChange={onChange}        
+          className="animate-zoomin font-bold text-xl xl:text-4xl col-start-4 col-end-6 text-center block w-full p-4
        text-gray-900 border border-gray-300 rounded-lg bg-gray-50 sm:text-md focus:ring-red-500
         focus:border-blue-500 dark:bg-white-900 dark:border-gray-600 dark:placeholder-gray-400 dark:text-black
          dark:focus:ring-blue-500 dark:focus:border-blue-500"
           type="number"
         />
-        <div className="animate-zoomin pt-3 xl:pt-10 text-sm xl:text-2xl rounded-xl col-start-6 col-end-7 text-center leading-relaxed bg-red-300  ">
-          Αριθμός ατόμων
+        <div className="animate-zoomin pt-3 xl:pt-5 text-3xl xl:text-4xl  rounded-xl col-start-6 col-end-7 text-center leading-relaxed bg-red-300  ">
+        🧑‍🤝‍🧑
         </div>
 
         <div className="animate-zoomin font-bold pt-10 xl:pt-3 text-sm rounded-xl bg-orange-500 col-start-1 col-end-3 text-center">
