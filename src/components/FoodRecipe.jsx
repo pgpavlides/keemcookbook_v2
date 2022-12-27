@@ -36,21 +36,21 @@ const FoodRecipe = (props) => {
         </div>
 
         <div className="animate-zoomin font-bold pt-10 xl:pt-3 text-sm rounded-xl bg-orange-500 col-start-1 col-end-3 text-center">
-          {props.name}
+          {data[10].foodname}
           <img
-            className=" w-96 animate-zoomin rounded-3xl px-2 py-2 mx-auto"
-            src={props.img}
+            className=" w-96 animate-zoomin rounded-3xl px-2 py-2 mx-auto xl:w-max "
+            src={data[11].img}
             alt=""
           />
         </div>
         <div className="animate-zoomin font-bold rounded-xl bg-red-500 col-start-3 col-end-8 text-center text-2xl">
           Ingridients
           <div className="text-left pl-4 font-normal pt-3 pb-2 xl:pt-16 xl:text-center text-sm xl:text-2xl">
-            {data.map((item) => (
+            {data.filter((item, index) => index < 10).map((item) => (
               <li key={item.key}>
                 {" "}
                 {item.name}{" "}
-                {item.in && ((item.in / 100) * props.inputValue * 10) / 10}{" "}
+                {item.in && (Math.round((item.in / 100) * props.inputValue * 10) / 10).toFixed(1)}{" "}
                 {item.end}
               </li>
             ))}
@@ -58,15 +58,19 @@ const FoodRecipe = (props) => {
         </div>
         <div className=" font-bold animate-zoomin rounded-xl bg-green-500 col-start-8 col-end-1 text-center text-2xl">
           Execution
-          <p className="font-normal pt-3 xl:pt-6 text-sm xl:text-2xl">
-            {props.description}
+          <p className="font-normal pb-3 pt-3 xl:pt-6 text-sm xl:text-2xl">
+            {data[12].description}
           </p>
         </div>
         <div className="font-bold animate-zoomin rounded-xl bg-violet-500 col-start-8 col-end-1 text-center text-2xl">
           Extra Information
-          <p className="font-normal pt-3 xl:pt-6 text-sm xl:text-2xl">
-            {props.extrainfo}
-          </p>
+          <div className="font-normal pt-3 pb-3 xl:pt-6 text-sm xl:text-2xl">
+          {data.filter((item, index) => index > 12).map((item) => (
+              <li className="marker:text-black-500 marker:font-bold list-decimal" key={item.key}>                
+                {item.extrainfo}               
+              </li>
+            ))}
+          </div>
         </div>
       </div>
     </>
